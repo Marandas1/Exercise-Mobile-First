@@ -1,0 +1,218 @@
+/* This will effect everything from 0 to 576px */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap')
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 1rem/1.5rem 'Open Sans';
+  width: 46.88rem;
+  height: 167.25rem;
+ margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  padding-top: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+}
+
+.menu a{
+	text-decoration: none;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
+}
+
+.header h2 {
+  position: absolute;
+  bottom: 0;
+  width: 90.6%;
+  color: white;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  background-color: rgba(215, 226, 212, 90%); /* Add a semi-transparent background for better readability */
+  padding: 35px;
+  margin: 0;
+  color:#585858;
+  font-size: 30px;
+
+}
+
+h2{
+	font-family: "Oswald", sans-serif; 
+	font-weight: 200;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #585858;
+}
+
+.middle{
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	gap: 65px; 
+}
+
+
+.middle-left img{
+	margin-left: 90px;
+	
+}
+
+.middle-right img{
+	margin-left: 20px;
+}
+
+p{
+	font-family: "Oswald", sans-serif; 
+	font-size: 20px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+a{
+	color:#585858;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.image-container {
+   position: relative;
+   width: 100%;
+   max-width: 500px; /* Set a maximum width for the image container */
+    }
+
+ /* Style for the image */
+ .image-container img {
+ width: 750px;
+ height: 531px;
+ display: block;
+    }
+
+/* Style for the text overlay */
+    
+.image-text {
+position:absolute;
+top: 20%;
+left: 70%;
+color: white;
+font-size: 64px;
+font-weight: bold;
+text-align: center;
+line-height: 70px;
+font-weight: lighter;
+font-family: "Oswald", sans-serif;
+    }
+
+.row4{
+	background-color: #d9e5d9;
+	
+}
+
+
+.row4 h2{
+	margin: 10px;
+	padding: 20px 0 30px;
+	font-size: 44px;
+	
+}
+
+footer{
+background-color: black;
+height: 465px;
+
+justify-content: space-between;
+
+}
+
+footer li{
+	color: #585858;
+	list-style: none;
+	font-size: 20px;
+	
+}
+
+h3, p {
+  text-transform: uppercase;
+  color: #585858;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.left{
+	flex-direction: column-reverse;
+	text-align: center;
+	margin-right: 60%;
+	border: 1px solid red;
+}
+
+.right{
+	flex-direction: column-reverse;
+	align-items: flex-end;
+	text-align: center;
+	margin-left: 50%;
+	margin-top: -17.4%;
+	border: 1px solid red;
+}
+
+
+h3{
+text-transform: uppercase;
+color: #585858;
+align-content: center;
+font-size: 35px;
+font-weight: lighter;
+}
+
+/* Media Queries */
+@media (min-width: 576px) /* for mobile */{
+	
+	
+}
+@media (min-width:768px) /* for tablets */{
+	
+	
+	
+}
+@media (min-width: 992px) /* for laptops */{
+	
+	
+	
+}
+@media (min-width: 1200px) /* for large devices */{
+	
+	
+	
+}
+
+
+
+
+
+
