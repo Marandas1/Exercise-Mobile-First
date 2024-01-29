@@ -2,9 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap')
 
 
-* {
+*{
 	box-sizing: border-box;
 }
+
+html {
+  font-size: 100%;
+}
+
 
 body {
   margin: 0;
@@ -25,7 +30,7 @@ body {
 
 .menu > li {
   margin: 0 1rem;
-  padding-top: 10px;
+  padding-top: 0.63;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -51,21 +56,21 @@ body {
   bottom: 0;
   width: 90.6%;
   color: white;
-  font-size: 24px;
+  font-size: 1.50rem;
   font-weight: lighter;
   text-align: center;
   background-color: rgba(215, 226, 212, 90%); /* Add a semi-transparent background for better readability */
-  padding: 35px;
+  padding: 2.19rem;
   margin: 0;
   color:#585858;
-  font-size: 30px;
+  font-size: 1.88rem;
 
 }
 
 h2{
 	font-family: "Oswald", sans-serif; 
 	font-weight: 200;
-	font-size: 25px;
+	font-size: 1.56rem;
 	text-transform: uppercase;
 	text-align: center;
 	color: #585858;
@@ -73,24 +78,33 @@ h2{
 
 .middle{
 	display: flex;
-	justify-content: center;
-	margin: 20px;
-	gap: 65px; 
+	align-content: center;
+	justify-content: space-between;
+	margin: 50px;
+	gap: 90px ; 
 }
 
 
-.middle-left img{
-	margin-left: 90px;
+.middle-left img p{
+	align-items: center;
+	
+}
+
+.middle-left{
 	
 }
 
 .middle-right img{
-	margin-left: 20px;
+	margin: auto;
+}
+
+.middle-last img{
+	margin-left: 2.50px;
 }
 
 p{
 	font-family: "Oswald", sans-serif; 
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: lighter;
 	text-align: center;
 }
@@ -105,17 +119,17 @@ a{
 .image-container {
    position: relative;
    width: 100%;
-   max-width: 500px; /* Set a maximum width for the image container */
+   max-width: 31.25rem; 
     }
 
- /* Style for the image */
+ 
  .image-container img {
- width: 750px;
- height: 531px;
+ width: 46.88rem;
+ height: 33.19rem;
  display: block;
     }
 
-/* Style for the text overlay */
+
     
 .image-text {
 position:absolute;
@@ -125,7 +139,7 @@ color: white;
 font-size: 64px;
 font-weight: bold;
 text-align: center;
-line-height: 70px;
+line-height: 4.38rem;
 font-weight: lighter;
 font-family: "Oswald", sans-serif;
     }
@@ -137,16 +151,15 @@ font-family: "Oswald", sans-serif;
 
 
 .row4 h2{
-	margin: 10px;
-	padding: 20px 0 30px;
-	font-size: 44px;
+	margin: 0.63rem;
+	padding: 1.25rem 0 1.88rem;
+	font-size: 2.75rem;
 	
 }
 
 footer{
 background-color: black;
-height: 465px;
-
+height: 33.44rem;
 justify-content: space-between;
 
 }
@@ -154,22 +167,21 @@ justify-content: space-between;
 footer li{
 	color: #585858;
 	list-style: none;
-	font-size: 20px;
+	font-size: 1.25rem;
 	
 }
 
-h3, p {
+h3, .red {
   text-transform: uppercase;
   color: #585858;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .left{
 	flex-direction: column-reverse;
 	text-align: center;
 	margin-right: 60%;
-	border: 1px solid red;
 }
 
 .right{
@@ -178,7 +190,6 @@ h3, p {
 	text-align: center;
 	margin-left: 50%;
 	margin-top: -17.4%;
-	border: 1px solid red;
 }
 
 
@@ -186,26 +197,70 @@ h3{
 text-transform: uppercase;
 color: #585858;
 align-content: center;
-font-size: 35px;
+font-size: 2.19rem;
 font-weight: lighter;
 }
 
+input[type=text] {
+  width: 40%;
+  padding: 0.31 0.63;
+  margin: 0.50rem 0;
+  box-sizing: border-box;
+  
+}
+
+input[type=submit] {
+  width: 10%; 
+  padding: 0.63rem; 
+  box-sizing: border-box;
+  background-color: #585858; 
+  color: white; 
+  border: none; 
+  border-radius: 0.31rem; 
+  cursor: pointer; 
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049; 
+
+}
+.mailing {
+  text-align: center;
+}
+
+.mailing form {
+  display: block; 
+}
+
+
+
 /* Media Queries */
-@media (min-width: 576px) /* for mobile */{
+@media (min-width: 36rem) /* for mobile */{
+	width: 95%;
+    max-width: none;
+	
+}
+@media (min-width:48rem) /* for tablets */{
+	.container {
+    width: 85%;
+  }
 	
 	
 }
-@media (min-width:768px) /* for tablets */{
-	
+@media (min-width: 62rem) /* for laptops */{
+	.mobile{
+    display: none;
+  }
+  
+  .desktop {
+    display: block;
+  }
+}
 	
 	
 }
-@media (min-width: 992px) /* for laptops */{
-	
-	
-	
-}
-@media (min-width: 1200px) /* for large devices */{
+@media (min-width: 75rem) /* for large devices */{
 	
 	
 	
